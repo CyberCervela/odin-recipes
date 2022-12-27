@@ -1,0 +1,101 @@
+/* Reset default styles*/
+* {
+    margin: 200;
+    padding: 200;
+    box-sizing: border-box;
+}
+
+/* Set global font and color styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #444444;
+}
+
+/* Set heading and paragraph styles */
+
+div {
+    padding: 0.5em;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: large;
+}
+
+p {
+    font-size: small;
+}
+
+li {
+    font-size: small;
+}
+
+/* Global styles for containers*/
+
+.container {
+  display: flex;
+}
+
+.container div {
+    justify-content: center;
+
+}
+
+
+/* Set images styles */
+
+.profilepic {
+    width: 110px;
+    border-radius: 10%;
+}
+
+/* Landing page styles */
+
+
+.hungrylist {
+    list-style-type: none;
+    font-weight: 900;
+}
+
+.hungrylist li {
+    margin: 10px 0;
+}
+
+.hungrylist li::before {
+    content: "😋";
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .neumorphic-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #eee;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 
+      inset 0 0 0 2px #eee,
+      0 1px 2px rgba(0,0,0,0.2);
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .neumorphic-button:hover {
+    background: #ddd;
+  }
+  
+  .neumorphic-button:active {
+    box-shadow: 
+      inset 0 0 0 2px #ddd,
+      0 1px 2px rgba(0,0,0,0.2);
+  }
+  
+  button a {
+        text-decoration: none;   
+  }
