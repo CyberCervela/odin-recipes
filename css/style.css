@@ -3,12 +3,14 @@
     margin: 200;
     padding: 200;
     box-sizing: border-box;
+
 }
 
 /* Set global font and color styles */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #444444;
+    max-width: 220ch;
 }
 
 /* Set heading and paragraph styles */
@@ -19,30 +21,48 @@ div {
 
 h1 {
     font-size: xx-large;
+    color:cornflowerblue;
+    max-width: 65ch;
 }
 
 h2 {
     font-size: large;
+    color:cornflowerblue;
+    max-width: 65ch;
 }
 
 p {
     font-size: small;
+    color:cornflowerblue;
+    max-width: 65ch;
 }
 
 li {
     font-size: small;
+    color:cornflowerblue;
+    max-width: 45ch;
 }
 
 /* Global styles for containers*/
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .container div {
-    justify-content: center;
-
+    /* align-items: stretch; */
+    /* justify-content: space-between; */
+    
 }
+
+.container .foodpic {
+    border-radius: 5%;
+    max-width: 45ch;
+    flex-grow: 2;
+}
+
 
 
 /* Set images styles */
@@ -51,6 +71,7 @@ li {
     width: 110px;
     border-radius: 10%;
 }
+
 
 /* Landing page styles */
 
